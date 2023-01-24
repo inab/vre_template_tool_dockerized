@@ -1,0 +1,32 @@
+[
+    {
+        "_id": "unique_file_id_5e14abe0a37012.29503907",
+        "type": "file",
+        "file_path": "data/eu_data_test/eu_es.txt",
+        "file_type": "TXT",
+        "data_type": "input_file",
+        "compressed": 0,
+        "sources": [],
+        "user_id": "user_id",
+        "creation_time": {
+            "$date": {
+                "$numberLong": 1612777323000
+            }
+        },
+        "meta_data": {
+            "size": 0,
+            "project": "example",
+            "atime": {
+                "$date": {
+                    "$numberLong": 1612777323000
+                }
+            },
+            "parentDir": "unique_file_id_5e14abe0a37742.64003100",
+            "lastAccess": {
+                "$date": {
+                    "$numberLong": 1612777323000
+                }
+            }
+        }
+    }
+]

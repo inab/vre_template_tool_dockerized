@@ -1,1 +1,3 @@
-# vre_tool_template_dockerized
+docker build -t dummy_test . --network=host
+
+
