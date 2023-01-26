@@ -1,0 +1,17 @@
+{
+  "output_files": [
+    {
+      "name": "my_dummy_outfile",
+      "type": "file",
+      "file_path": "/shared_data/userdata/user_1/run000/my_dummy_outfile.txt",
+      "data_type": "sample_information_file",
+      "file_type": "TXT",
+      "sources": [],
+      "meta_data": {
+        "visible": true,
+        "tool": "dummy_tool",
+        "description": "Dummy TXT output file."
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+    "input_files": [
+    ],
+    "arguments": [
+        {
+            "name": "execution",
+            "value": "/shared_data/userdata/user_1/run000"
+        },
+        {
+            "name": "project",
+            "value": "example"
+        },
+        {
+            "name": "description",
+            "value": "test"
+        },
+        {
+            "name": "argument_name",
+            "value": "Random String"
+        }
+    ],
+    "output_files": [
+        {
+            "name": "my_demo_outfile",
+            "required": true,
+            "allow_multiple": false,
+            "file": {
+                "file_type": "TXT",
+                "data_type": "sample_information_file",
+                "meta_data": {
+                    "visible": true,
+                    "tool": "demo_tool",
+                    "description": "Demo TXT output file."
+                },
+                "file_path": "my_demo_outfile.txt"
+            }
+        }
+    ]}
