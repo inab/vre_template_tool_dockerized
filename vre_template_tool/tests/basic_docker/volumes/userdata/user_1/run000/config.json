@@ -21,7 +21,7 @@
     ],
     "output_files": [
         {
-            "name": "my_demo_outfile",
+            "name": "my_dummy_outfile",
             "required": true,
             "allow_multiple": false,
             "file": {
@@ -29,10 +29,10 @@
                 "data_type": "sample_information_file",
                 "meta_data": {
                     "visible": true,
-                    "tool": "demo_tool",
-                    "description": "Demo TXT output file."
+                    "tool": "dummy_tool",
+                    "description": "Dummy TXT output file."
                 },
-                "file_path": "my_demo_outfile.txt"
+                "file_path": "my_dummy_outfile.txt"
             }
         }
     ]}

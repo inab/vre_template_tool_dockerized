@@ -1,7 +1,7 @@
 #INTEGRATE NEW TOOL CONTAINER
 FROM ubuntu:22.04 
 #here you should use your tool's image as a starting point
-RUN echo "#!/bin/bash \n echo \"Hello. This is dummy process reading the commandline argument '\$1' and writing this line in a new outfile.\" > my_dummy_outfile.txt \n" >> /home/my_dummy_pipeline.sh 
+RUN echo "#!/bin/bash \n echo \"Hello. This is demo process reading the commandline argument '\$1' and writing this line in a new outfile.\" > my_demo_outfile.txt \n" >> /home/my_demo_pipeline.sh 
 
 #INSTALL openVRE DEPENDENCIES
 
@@ -31,5 +31,5 @@ RUN  chmod -R a+rwx /home/vre_template_tool
 
 
 #Execute entrypoint 
-#ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
 

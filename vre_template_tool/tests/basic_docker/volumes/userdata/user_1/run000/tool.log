@@ -1,0 +1,26 @@
+2023-01-26 12:06:25 | INFO: 0) Unpack information from JSON
+2023-01-26 12:06:25 | INFO: 1) Instantiate and Configure Tool
+2023-01-26 12:06:25 | INFO: 2) Run Tool
+
+-- Input data:
+{}
+
+-- Arguments:
+{'execution': '/shared_data/userdata/user_1/run000', 'project': 'example', 'description': 'test', 'argument_name': 'Random String'}
+
+-- CWD:
+/shared_data/userdata/user_1/run000
+
+-- Expected output is:
+my_dummy_outfile.txt
+
+-- Starting the Dummy pipeline
+['bash', '/home/my_dummy_pipeline.sh', 'my_dummy_outfile.txt']
+
+-- Check files in the directory
+['in_metadata.json', 'tool.log', 'config.json']
+/shared_data/userdata/user_1/run000
+2023-01-26 12:06:25 | PROGRESS: The execution finished successfully - FINISHED
+2023-01-26 12:06:25 | INFO: 3) Create information
+2023-01-26 12:06:25 | INFO: 4) Pack information to JSON
+2023-01-26 12:06:25 | PROGRESS: <myTool> tool successfully executed; see /shared_data/userdata/user_1/run000/out_metadata.json

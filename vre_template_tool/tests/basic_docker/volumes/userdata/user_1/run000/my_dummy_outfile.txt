@@ -1,0 +1,1 @@
+Hello. This is dummy process reading the commandline argument 'my_dummy_outfile.txt' and writing this line in a new outfile.

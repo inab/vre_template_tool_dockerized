@@ -19,4 +19,4 @@ bindfs --force-user=application --force-group=application --create-for-user=1000
 #    exec sudo -H -u application -- bash
 #fi
 
-#exec "$@"
+exec "$@"

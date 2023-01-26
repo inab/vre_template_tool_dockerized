@@ -36,7 +36,7 @@ class myTool(Tool):
         Init function.
 
         :param configuration: A dictionary containing parameters that define how the operation should be carried out,
-            which are specific to the NLP tool.
+            which are specific to the tool.
         :type configuration: dict
         """
         Tool.__init__(self)
@@ -93,10 +93,11 @@ class myTool(Tool):
             output_type = output_metadata[0]['file']['file_type'].lower()
             
             # Tool Execution
-            self.run_my_dummy_pipeline(input_files,output_file_path)
+            self.run_my_demo_pipeline(input_files,output_file_path)
             
             # Validate output 
             if os.path.isfile(output_file_path):
+                output_file_path= os.path.abspath(self.execution_path + "/" + output_file_path)
                 output_files[output_id] = [(output_file_path, "file")]
 
                 return output_files, output_metadata
@@ -108,11 +109,11 @@ class myTool(Tool):
 
 
         except:
-            errstr = "NLP execution failed. See logs."
+            errstr = "The execution failed. See logs."
             logger.fatal(errstr)
             raise Exception(errstr)
 
-    def run_my_dummy_pipeline(self, input_files, output_file_path):
+    def run_my_demo_pipeline(self, input_files, output_file_path):
         """
         The main function to run the pipeline.
 
@@ -133,11 +134,11 @@ class myTool(Tool):
             print("\n-- Expected output is:")
             print(output_file_path)
             cmd = [
-                'bash ', '/home/my_dummy_pipeline.sh ', output_file_path 
+                'bash', '/home/my_demo_pipeline.sh', output_file_path 
             ]
-            print("\n-- Starting the Dummy pipeline")
+            print("\n-- Starting the Demo pipeline")
             print(cmd)
-
+            
             process = subprocess.Popen(cmd, stdout=subprocess.PIPE,stderr=subprocess.STDOUT) # stderr=subprocess.PIPE
 
             # Sending the stdout to the log file
