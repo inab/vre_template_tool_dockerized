@@ -1,7 +1,5 @@
 #INTEGRATE YOUR TOOL'S CONTAINER
-FROM ubuntu:22.04
-RUN echo "#!/bin/bash \n echo \"Hello. This is demo process reading the commandline argument '\$1' and writing this line in a new outfile.\" > my_demo_outfile.txt \n" >> /home/my_demo_pipeline.sh 
-#this is a dummy tool for demonstration purposes
+FROM demo
 
 #---------- DO NOT EDIT BELOW HERE ------------------------------------------------------------# 
 #INSTALL openVRE DEPENDENCIES

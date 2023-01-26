@@ -1,0 +1,1 @@
+Hello. This is demo process reading the commandline argument 'my_demo_outfile.txt' and writing this line in a new outfile.
