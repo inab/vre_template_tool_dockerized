@@ -97,7 +97,7 @@ class myTool(Tool):
             
             # Validate output 
             if os.path.isfile(output_file_path):
-                output_file_path= os.path.abspath(self.execution_path + "/" + output_file_path)
+                #output_file_path= os.path.abspath(self.execution_path + "/" + output_file_path)
                 output_files[output_id] = [(output_file_path, "file")]
 
                 return output_files, output_metadata
