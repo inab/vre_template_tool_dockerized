@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-addgroup --gid "$HOST_GID" application
-adduser --uid "$HOST_UID" --gid "$HOST_GID" --gecos "" --disabled-password application
+addgroup --gid 1000 application
+adduser --uid 1000 --gid 1000 --gecos "" --disabled-password application
 
 ### Insert here privileged tasks.
 #bindFS

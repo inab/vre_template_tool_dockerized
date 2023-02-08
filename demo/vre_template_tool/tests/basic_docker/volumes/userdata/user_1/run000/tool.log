@@ -1,6 +1,6 @@
-2023-01-26 16:05:21 | INFO: 0) Unpack information from JSON
-2023-01-26 16:05:21 | INFO: 1) Instantiate and Configure Tool
-2023-01-26 16:05:21 | INFO: 2) Run Tool
+2023-02-08 18:14:19 | INFO: 0) Unpack information from JSON
+2023-02-08 18:14:19 | INFO: 1) Instantiate and Configure Tool
+2023-02-08 18:14:19 | INFO: 2) Run Tool
 
 -- Input data:
 {}
@@ -16,7 +16,7 @@ my_demo_outfile.txt
 
 -- Starting the Demo pipeline
 ['bash', '/home/my_demo_pipeline.sh', 'my_demo_outfile.txt']
-2023-01-26 16:05:21 | PROGRESS: The execution finished successfully - FINISHED
-2023-01-26 16:05:21 | INFO: 3) Create information
-2023-01-26 16:05:21 | INFO: 4) Pack information to JSON
-2023-01-26 16:05:21 | PROGRESS: <myTool> tool successfully executed; see /shared_data/userdata/user_1/run000/out_metadata.json
+2023-02-08 18:14:19 | PROGRESS: The execution finished successfully - FINISHED
+2023-02-08 18:14:19 | INFO: 3) Create information
+2023-02-08 18:14:19 | INFO: 4) Pack information to JSON
+2023-02-08 18:14:19 | PROGRESS: <myTool> tool successfully executed; see /shared_data/userdata/user_1/run000/out_metadata.json

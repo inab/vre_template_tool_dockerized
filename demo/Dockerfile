@@ -1,5 +1,5 @@
 #INTEGRATE YOUR TOOL'S CONTAINER
-FROM demo
+FROM lcodo/demo_application:1.0
 
 #---------- DO NOT EDIT BELOW HERE ------------------------------------------------------------# 
 #INSTALL openVRE DEPENDENCIES

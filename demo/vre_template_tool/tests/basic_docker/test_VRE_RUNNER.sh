@@ -10,7 +10,7 @@
 
 CWD="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 TEST_DATA_DIR=$CWD
-TOOL_IMAGE=demo_tool
+TOOL_IMAGE=demo_vre_tool
 
 ###### DO NOT EDIT ##############
 
